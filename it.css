@@ -45,7 +45,6 @@ ul{
 }
 
 li{
-   border: 1px solid black;
    box-sizing: border-box;
    height: max-content;
    display: list-item;
