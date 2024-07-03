@@ -196,7 +196,6 @@ main{
    width: 100%;
 }
 .container{
-   border: 2px solid red;
    box-sizing: border-box;
    align-items: center;
    color: rgb(39, 39, 39);
