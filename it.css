@@ -191,7 +191,7 @@ a:hover{
 }
 
 .nav-links li {
-   margin-left: 10px;
+   margin-left: 20px;
 }
 
 .nav-links a {
@@ -506,6 +506,13 @@ main{
 
    .nav-links:last-child{
       margin-right: 0px;
+   }
+
+   .nav-links a {
+      text-decoration: none;
+      color: rgb(39, 39, 39);
+      font-size: 18px;
+      font-size: small;
    }
 
    .h1-guide{
