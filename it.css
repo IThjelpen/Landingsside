@@ -86,9 +86,6 @@ header{
    right: 0;
 }
 
-.nyhet ul :last-child{
-   margin-left: 1px;
-}
 /* SLUTT Animasjon av rulltekst øverst på siden. rulleteksten er kalt .discount på html og css*/
 
 @keyframes discount {
@@ -508,7 +505,7 @@ main{
    }
 
    .nav-links:last-child{
-      margin-right: 1px;
+      margin-right: 0px;
    }
 
    .h1-guide{
