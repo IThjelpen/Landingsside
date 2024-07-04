@@ -61,28 +61,33 @@ header{
    list-style: none;
    justify-content: space-between;
    margin: 0;
-   padding: 0px 20px;
+   padding: 0px 1px;
    background-color: white;
    transform: translateX(100%);
    transform: translateX(-1px);
    animation: discount 15s infinite linear;
+   
 }
 .nyhet ul li{
    white-space: nowrap;
-   padding: 0;
-   margin: 0;
+   padding-left: 0;
+   margin-left: 0px;
    color: green;
    background-color: white;
    position: relative;
 
 }
 .nyhet ul li::after {
-   width: 10px;
+   width: 100px;
    height: 100%;
    background-color: none;
    position: absolute;
    top: 0;
    right: 0;
+}
+
+.nyhet ul :last-child{
+   margin-left: 1px;
 }
 /* SLUTT Animasjon av rulltekst øverst på siden. rulleteksten er kalt .discount på html og css*/
 
@@ -94,6 +99,7 @@ header{
       transform: translateX(-900px);
    }
 }
+
 
 /*
 ul{
@@ -493,8 +499,6 @@ main{
       font-size: larger;
    }
    
-   .nyhet ul{
-      display: block;
 
    .logo a {
       text-decoration: none;
