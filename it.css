@@ -493,6 +493,9 @@ main{
       font-size: larger;
    }
    
+   .nyhet ul{
+      display: block;
+
    .logo a {
       text-decoration: none;
       font-size: 24px;
@@ -510,6 +513,7 @@ main{
       color: transparent; 
       text-align: center;
    }
+
 }
 
 @media (min-width: 600px) {
