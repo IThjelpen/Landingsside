@@ -12,8 +12,8 @@
 html{
    height: 100vh;
    box-sizing: border-box;
-   margin: 5px;
-
+   margin: 1px;
+   margin-top: 15px;
 
 }
 header{
@@ -27,10 +27,72 @@ header{
    font-size: 16px;
    font-weight: 400;
    position: absolute;
-   top: 0%;
+   top: 1%;
    unicode-bidi: isolate;
    width: 97%;
    z-index: 999;
+}
+
+/* START Animasjon av rulltekst øverst på siden. rulleteksten er kalt .discount på html og css*/
+.nyhet{
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 20px;
+   padding: 0;
+   margin: 0;
+   box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.1);
+}
+.nyhet .tittel {
+   position: absolute;
+   background-color: rgb(31, 31, 31);
+   height: 100%;
+   display: flex;
+   align-items: right;
+   padding: 0px 7px;
+   color: green;
+   font-weight: 550;
+   z-index: 300;
+}
+
+.nyhet ul{
+   display: flex;
+   list-style: none;
+   justify-content: space-between;
+   margin: 0;
+   padding: 0px 20px;
+   background-color: white;
+   transform: translateX(100%);
+   transform: translateX(-1px);
+   animation: discount 15s infinite linear;
+}
+.nyhet ul li{
+   white-space: nowrap;
+   padding: 0;
+   margin: 0;
+   color: green;
+   background-color: white;
+   position: relative;
+
+}
+.nyhet ul li::after {
+   width: 10px;
+   height: 100%;
+   background-color: none;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+/* SLUTT Animasjon av rulltekst øverst på siden. rulleteksten er kalt .discount på html og css*/
+
+@keyframes discount {
+   from {
+      transform: translateX(1083px);
+   }
+   to {
+      transform: translateX(-900px);
+   }
 }
 
 /*
@@ -108,7 +170,7 @@ a:hover{
    justify-content: space-between;
    align-items: center;
    padding: 10px 20px;
-   background-color: rgb(255, 255, 255);
+   background-color: rgb(255, 255, 255, 0rem);
 }
 
 .logo a {
@@ -206,15 +268,24 @@ main{
    height: auto;
    line-height: 20px;
    margin-bottom: 0px;
-   margin-left: 0px;
-   margin-right: 0px;
-   margin-top: 0px;
+   margin-left: 0;
+   margin-right: 0;
+   margin-top: auto;
    padding-bottom: 0px;
    padding-left: 15px;
    padding-right: 15px;
-   padding-top: 0px;
+   padding-top: auto;
    unicode-bidi: isolate;
    width: 100%;
+}
+
+.qa-belt{
+   background-image: url(qa.jpeg);
+   background-size: cover;
+   height: 70px;
+   border-top-right-radius: 12px;
+   border-bottom-left-radius: 50px;
+   margin-bottom: 20px;
 }
 
 .første-seksjon{
@@ -366,7 +437,7 @@ main{
    font-family: basis-grotesque-pro, sans-serif;
    font-size: 16px;
    font-weight: 400;
-   height: 500px;
+   height: 400px;
    line-height: 20px;
    margin-bottom: 80px;
    margin-left: 0%;
@@ -432,14 +503,29 @@ main{
    .nav-links:last-child{
       margin-right: 1px;
    }
+
+   .h1-guide{
+      background-image: linear-gradient(43deg, red 0%, blue 46%,yellow 100%); 
+      -webkit-background-clip: text; 
+      color: transparent; 
+      text-align: center;
+   }
 }
 
 @media (min-width: 600px) {
    .container {
-      margin-left: 100px;
-      margin-right: 100px;
+      margin-left: 200px;
+      margin-right: 200px;
       width: auto;
    }
+
+   .h1-guide{
+      background-image: linear-gradient(43deg, red 0%, blue 26%,green 46%, red 70%); 
+      -webkit-background-clip: text; 
+      color: transparent; 
+      text-align: center;
+   }
+  
    .footer {
       margin-left: 100px;
       margin-right: 100px;
